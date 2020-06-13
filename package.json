@@ -1,0 +1,18 @@
+{
+  "name": "css-styles-to-ansi-escape-sequences",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan Bölsche <jan@lagomorph.de> (http://regular.codes/)",
+  "license": "ISC",
+  "dependencies": {
+    "ansicolor": "^1.1.93",
+    "css": "^2.2.4",
+    "css-property-parser": "^1.0.6",
+    "debug": "^4.1.1",
+    "parse-color": "^1.0.0"
+  }
+}
