@@ -1,6 +1,7 @@
 'use strict'
 
 // taken from sprintf-js and modified meaning of %c
+const sprintf_cache = Object.create(null)
 
 const re = {
     not_string: /[^s]/,
@@ -21,7 +22,6 @@ const re = {
 }
 
 module.exports = function(parseCSS) {
-  const sprintf_cache = Object.create(null)
 
   return sprintf
 
