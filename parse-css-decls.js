@@ -1,9 +1,6 @@
-const debug = require('debug')('bla')
 const css = require('css')
-debug('start require')
 const expandShorthandProperty = require('css-property-parser/src/expandShorthandProperty')
 const isInitialValue = require('css-property-parser/src/isInitialValue')
-debug('end require')
 const parseColor = require('parse-color')
 
 function parseCSSDeclarations(str) {
