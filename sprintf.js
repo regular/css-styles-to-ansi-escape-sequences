@@ -21,7 +21,7 @@ const re = {
     sign: /^[+-]/
 }
 
-module.exports = function(parseCSS) {
+module.exports = function(parseCSS, stringify) {
 
   return sprintf
 
@@ -141,9 +141,11 @@ module.exports = function(parseCSS) {
         }
       }
     }
+    if (cursor !== argv.length) {
+      output += ' ' + Array.from(argv).slice(cursor).map(stringify).join(' ')
+    }
     return output
   }
-
 
   function sprintf_parse(fmt) {
     if (sprintf_cache[fmt]) {

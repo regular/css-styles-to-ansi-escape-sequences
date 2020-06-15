@@ -11,7 +11,11 @@ module.exports = function(level) {
       const props = parseCSSDecls(css)
       return format(props)
     }
-    const sprintf = Sprintf(parseCSS)
+    function stringify(x) {
+      if (typeof x == 'object') return JSON.stringify(x)
+      return String(x)
+    }
+    const sprintf = Sprintf(parseCSS, stringify)
     return sprintf.apply(null, arguments) + format.reset()
   }
   return log
