@@ -1,6 +1,6 @@
 {
   "name": "console-with-style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CSS (%c) support for console.log() in Node",
   "main": "index.js",
   "scripts": {
